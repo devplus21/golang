@@ -44,22 +44,22 @@ func main() {
 	copyMap["Alex"] = 25 // same the memory with peopleNameAgeMap
 
 	// struct
-	studentLong := People{
+	student := People{
 		age:      21,
 		name:     "Tien",
 		isMale:   true,
 		subjects: []string{"BackEnd", "FrontEnd", "Design"},
 	}
 
-	fmt.Println(studentLong.subjects)
+	fmt.Println(student.subjects)
 
-	peoplePlayKhoaPug := People{}
+	peoplePlay := People{}
 
-	peoplePlayKhoaPug.age = 25
-	peoplePlayKhoaPug.isMale = true
-	peoplePlayKhoaPug.name = "Alex"
-	peoplePlayKhoaPug.subjects = []string{"Math", "English"}
-	fmt.Println(peoplePlayKhoaPug)
+	peoplePlay.age = 25
+	peoplePlay.isMale = true
+	peoplePlay.name = "Alex"
+	peoplePlay.subjects = []string{"Math", "English"}
+	fmt.Println(peoplePlay)
 
 	// quick declare
 	studentNoName := struct{ name string }{name: "Happy"}
